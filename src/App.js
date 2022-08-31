@@ -19,10 +19,10 @@ function App() {
     {/* nav */}
      <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="/"><img src={`${process.env.PUBLIC_URL}/img/logo.png`}/></Navbar.Brand>
+          <Navbar.Brand href="/project04_Shoppingmall/"><img src={`${process.env.PUBLIC_URL}/img/logo.png`}/></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link href="/join">Join(+1,000)</Nav.Link>
+            <Nav.Link href="/project04_Shoppingmall/login/">Login</Nav.Link>
+            <Nav.Link href="/project04_Shoppingmall/join/">Join(+1,000)</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -54,7 +54,7 @@ function App() {
 
     <Routes>
       <Route
-          path="/"
+          path="/project04_Shoppingmall/"
           element={
             <div className='inner'>
               <h1>NEW</h1>
@@ -70,14 +70,14 @@ function App() {
         />
 
       <Route
-        path='/login'
+        path='/project04_Shoppingmall/login/'
         element={
           <Login/>
         }
       />
 
       <Route
-        path='/join'
+        path='/project04_Shoppingmall/join/'
         element={
           <Join/>
         }
