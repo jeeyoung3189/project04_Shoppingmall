@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/project04_Shoppingmall/static/css/main.f84c9fc0.css",
-    "main.js": "/project04_Shoppingmall/static/js/main.1710b13f.js",
+    "main.js": "/project04_Shoppingmall/static/js/main.b98122aa.js",
     "static/js/787.320d7db6.chunk.js": "/project04_Shoppingmall/static/js/787.320d7db6.chunk.js",
     "index.html": "/project04_Shoppingmall/index.html",
     "main.f84c9fc0.css.map": "/project04_Shoppingmall/static/css/main.f84c9fc0.css.map",
-    "main.1710b13f.js.map": "/project04_Shoppingmall/static/js/main.1710b13f.js.map",
+    "main.b98122aa.js.map": "/project04_Shoppingmall/static/js/main.b98122aa.js.map",
     "787.320d7db6.chunk.js.map": "/project04_Shoppingmall/static/js/787.320d7db6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f84c9fc0.css",
-    "static/js/main.1710b13f.js"
+    "static/js/main.b98122aa.js"
   ]
 }
