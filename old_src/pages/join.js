@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 function Join(){
 // 초기값
  const [id, setId] = React.useState("");
@@ -87,7 +86,7 @@ function Join(){
     const nameRegExp = /^[가-힣]{2,5}$/;
  
     if (!nameRegExp.test(currentName)) {
-      setNameMessage("한글로 이루어진 2~5자리를 입력해 주세요.");
+      setNameMessage("한글로 이루어진 4~12자리를 입력해 주세요.");
       setIsName(false);
     } else {
       setNameMessage("사용 가능한 이름 입니다.");
@@ -169,7 +168,7 @@ function Join(){
        </div>
        <br />
        <br />
-       <a className="join_btn">회원가입</a>
+       <a className="join_btn" href="/login">회원가입</a>
      </div>
    </>
  );

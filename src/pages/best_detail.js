@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom"
 
-function Detail(props){
+function Bestdetail(props){
     let {id} = useParams()
-    let findId = props.product.find(function(x){
+    let findId = props.bestproduct.find(function(x){
         return x.id == id;
     })
     id = Number(id);
@@ -15,7 +15,7 @@ function Detail(props){
        <>
         <div className="de_inner">
             <div className="de_info">
-                <img src={`${process.env.PUBLIC_URL}/img/product0${id+1}.jpg`} />
+                <img src={`${process.env.PUBLIC_URL}/img/best_product0${id+1}.jpg`} />
                 <div className="de_txt">
                     <p>{findId.title}</p>
                     <p>판매가 : {dePrice2}원</p>
@@ -27,9 +27,9 @@ function Detail(props){
                     <button className="cart">장바구니</button>
                 </div>
             </div>
-            <div className="de_page"><img src={`${process.env.PUBLIC_URL}/img/detail0${id+1}.jpg`} /></div>
+            <div className="de_page"><img src={`${process.env.PUBLIC_URL}/img/best_detail0${id+1}.jpg`} /></div>
         </div>
        </>
     )
 }
-export default Detail
+export default Bestdetail

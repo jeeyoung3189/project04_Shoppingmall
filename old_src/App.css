@@ -17,7 +17,7 @@ ul, ol, li{
 }
 
 
-.inner, .log_inner, .join_inner, .de_inner, .nav_inner, .ft_inner{
+.inner, .log_inner, .join_inner, .de_inner, .nav_inner{
   max-width: 1640px;
   margin: auto;
 }
@@ -26,13 +26,10 @@ ul, ol, li{
   padding-left: 250px;
 }
 
-.logo{
-  margin: 0.5rem 0;
-}
-
 
 /* 옆 nav */
 .nav_inner *{
+  font-size: 20px;
   line-height: 2;
 }
 
@@ -50,22 +47,14 @@ ul, ol, li{
   padding-right: 5rem;
 }
 
-.nav_inner ul li:hover a{
-  font-weight: bold;
-}
-
-.nav_inner ul li:nth-of-type(11){
-  margin-top: 2rem;
-  position: relative;
-}
-
-.nav_inner ul li:nth-of-type(11)::before{
+.nav_inner ul::before{
   content: "";
   position: absolute;
-  top: -1rem;
-  left: 0;
-  width: 150%;
-  height: 1px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
   background-color: lightgray;
 }
 
@@ -78,7 +67,7 @@ ul, ol, li{
 }
 
 .log_inner{
-  padding-bottom: 12rem;
+  padding-bottom: 5rem;
 }
 
 .inner > h1 , .log_inner > h1, .join_inner>h1{
@@ -90,8 +79,9 @@ ul, ol, li{
 }
 
 .inner >div{
-  width: calc(100% / 4 - 100px);
+  width: calc(100% / 3 - 100px);
   display: flex;
+  border: 1px solid red;
 }
 
 .list{
@@ -106,6 +96,7 @@ ul, ol, li{
 }
 
 .list > p:first-of-type{
+  font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -134,6 +125,7 @@ ul, ol, li{
 
 .log_con label {
   width: 60px;
+  font-size: 20px;
 }
 
 .log_con input{
@@ -167,6 +159,7 @@ button:hover, .join_btn:hover{
 
 .log_low > *{
   margin-left: 2rem;
+  font-size: 20px;
 }
 
 .log_low > *:hover{
@@ -191,6 +184,10 @@ button:hover, .join_btn:hover{
   justify-content: center;
 }
 
+.join_inner *{
+  font-size: 20px;
+}
+
 .join_inner >div{
   width: 40%;
 }
@@ -206,9 +203,7 @@ button:hover, .join_btn:hover{
 }
 
 .join_btn{
-  width: 150px;
-  height: 50px;
-  border-radius: 5rem;
+  width: 100%;
   text-decoration: none;
   color: lightcoral;
   display: flex;
@@ -233,6 +228,10 @@ button:hover, .join_btn:hover{
 .de_inner img{
   width: 20%;
   margin-right: 5rem;
+}
+
+.de_txt *{
+  font-size: 20px;
 }
 
 .de_txt p:first-of-type{
@@ -296,33 +295,3 @@ button:hover, .join_btn:hover{
   width: 100%;
 }
 
-/* footer */
-.ft_inner{
-  margin-top: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  padding: 0 15rem 2rem;
-}
-
-.ft_inner::before{
-  content: "";
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 1px;
-  background-color: lightgray;
-}
-
-.ft_inner p{
-  line-height: 1.2;
-}
-
-.ft_inner p:last-of-type{
-  width: 100%;
-  text-align: center;
-  margin-top: 1rem;
-}

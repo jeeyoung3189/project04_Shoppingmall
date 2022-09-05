@@ -14,12 +14,12 @@ function Detail(props){
     return(
        <>
         <div className="de_inner">
-            <div className="de_info">
+            <div class="de_info">
                 <img src={`${process.env.PUBLIC_URL}/img/product0${id+1}.jpg`} />
-                <div className="de_txt">
+                <div class="de_txt">
                     <p>{findId.title}</p>
                     <p>판매가 : {dePrice2}원</p>
-                    <div className="num">
+                    <div class="num">
                         <span>수량 : {count}</span>
                         <button className="plus" onClick={()=>{setCount(count+1)}}>+</button>
                     </div>
